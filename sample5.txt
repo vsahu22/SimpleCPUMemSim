@@ -1,0 +1,63 @@
+1       // Load 0 into AC
+0
+14      // Copy AC into X
+1
+10      // Program that gets the factorial of 10. User can change this to any number that isnt too large
+9       // Priting random number to screen
+1
+14      // Copying that number to X
+26      // Decrementing X - this is the number we will essentially multiply Y by
+16      // Also copying to Y - this is the multiplicand
+15      // Storing X into AC, which is the multiplier
+27      // Pushing AC on stack to store number
+1       // Loading 0 into AC 
+0
+27      // Pushing AC onto stack
+28      // Popping from the stack into AC
+11      // Adding Y to AC
+26      // Decrementing X again
+27      // Push AC onto stack to store current value
+15      // Copying X to AC so we can check if X is 0
+22      // Jump if not equal to 0, so add Y to the AC X amount of times
+15      // This address may be changed, but it jumps to when AC is being popped from stack
+28      // Pop from stack onto AC, we should get current result
+16      // Copy the result into Y
+28      // Pop from stack onto AC, this is the old multiplication value, we need to subtract 2 from it and push back to stack
+14      // Copying from AC to X
+26      // Decrementing X
+15      // Copy value from X to AC
+21      // Check if X is 0 and jump to finish if it is
+36      // Finish address
+15      // Copy X to AC so it can be stored in the stack
+27      // Pushing AC onto stack to store
+1       // Initializing the AC with 0
+0   
+20      // Jump to multiplication again
+16
+1
+33      // Load '!' value into AC
+9       // Print
+2      
+1       // Load whitespace value into AC
+32
+9       // print whitespace value
+2
+1       // Load '='
+61
+9       // Print
+2
+1       // Load whitespace
+32
+9       // Print
+2
+17      // Copy Y which is result into AC
+9       // Print factorial result
+1
+1       // Load newline 
+10
+9
+2       // Print newline
+50
+
+.1000   // Handler interrupt - just return
+30
